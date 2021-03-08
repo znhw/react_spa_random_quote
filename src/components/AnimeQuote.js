@@ -8,7 +8,7 @@ class AnimeQuote extends Component {
     }
 
     async componentDidMount() {
-        const url = "https://animechanapi.xyz/api/quotes/random";
+        const url = "https://animechan.vercel.app/api/random";
         const response = await fetch(url);
         const result = await response.json();
         this.setState({reply: result.data[0], loading: false})
