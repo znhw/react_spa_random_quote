@@ -11,10 +11,15 @@ class AnimeQuote extends Component {
         const url = "https://animechan.vercel.app/api/random";
         const response = await fetch(url);
         const result = await response.json();
-        this.setState({reply: result.data[0], loading: false})
-        console.log(result.data);
-    }
+        // this.setState({reply: response[0], loading: false})
+        this.setState({reply: result.response, loading: false})
 
+        console.log(result)
+        
+        this.setState({reply: result, loading: false})
+    }
+    
+    // }
     render() {
         return <div className="reply">
         {this.state.loading || !this.state.reply ? 
