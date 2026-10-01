@@ -8,7 +8,6 @@ This is an older project kept publicly as part of my development archive. The ex
 
 - React
 - JavaScript
-- Axios
 - REST API
 - CSS
 
